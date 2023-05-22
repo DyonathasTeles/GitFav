@@ -1,0 +1,242 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary: 195;
+  --white: hsla(var(--color-primary), 0%, 100%, 1);
+  font-size: 62.5%;
+}
+
+body {
+  background: #000000;
+
+  font-size: 1.6rem; 
+}
+
+body *  {
+  color: #E1E1E6;
+  font-family: 'Roboto', sans-serif;
+}
+
+.sr-only {
+  position: absolute;
+  padding: 0;
+  margin: -1px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border-width: 0;
+  white-space: nowrap;
+}
+
+#app {
+  max-width: 112rem;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin: 11.5rem 0 8.7rem 0;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  gap: .8rem;
+}
+
+.search input {
+  background: #06181C;
+  border-radius: 5px;
+  border: none;
+
+  padding: 0 1.6rem;
+  width: 46.2rem;
+  height: 4.8rem;
+
+}
+
+.search input::placeholder {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+
+  color: #7C7C8A;
+}
+
+#add {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .8rem;
+   
+  background: #065E7C;
+  border-radius: 5px;
+  border: none;
+
+  height: 4.8rem;
+  width: 17rem;
+  padding: 0 3.2rem  0;
+  
+
+  font-family: 'Roboto';
+
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+
+  color: #FFFFFF;
+
+  transition: all 400ms 100ms;
+  cursor: pointer;
+}
+
+#add:hover {
+  background-color:  #FFFFFF;
+  color: #065E7C;
+  transform: scale(1.03);
+}
+
+#add:hover svg path {
+  fill: #065E7C;
+}
+
+.table-wrapper {
+  border: 1px solid #4a808c;
+  border-radius: 1.2rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+table * {
+  font-size: 2rem;
+  color: #E1E1E6;
+}
+
+/* THEAD */
+
+table th {
+  background: #092D38;
+  padding: 1.6rem 2.4rem 1.6rem 4rem;
+}
+
+table th:first-child {
+  border-top-left-radius: .8rem;
+}
+
+table th:last-child {
+  border-top-right-radius: .8rem;
+}
+
+table tr:last-child {
+  border-radius: 0 0 .8rem .8rem;
+}
+
+/* tbody */
+
+tbody tr td {
+  padding: 2.4rem 2.4rem 2.4rem 4rem;
+}
+
+tbody .user img {
+  border-radius: 50%;
+  object-fit: cover;
+  width: 5.6rem;
+  height: 5.6rem;
+}
+
+tbody .user div {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+tbody .user a {
+  text-decoration: none;
+  font-weight: 400;
+
+}
+
+tbody .user a p {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 160%;
+
+color: #E1E1E6;
+}
+
+tbody tr{
+  background: rgba(6, 22, 27, 0.5);
+  padding: 1.6rem ;
+}
+
+tbody tr:nth-child(even){
+  background: #06181C;
+  border: #86E9FF 1px solid;
+}
+
+tbody tr:last-child td:first-child {
+  border-bottom-left-radius: 1.2rem;
+}
+
+tbody tr:last-child td:last-child {
+  border-bottom-right-radius: 1.2rem;
+}
+
+tbody .remover button {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 160%;
+  
+  color: #F75A68;
+  
+  border: none;
+  background: none;
+  cursor: pointer;
+  transition: all 400ms ;
+}
+
+tbody .remover button:hover {
+  color: #ff0000;
+  transform: scale(1.03);
+}
+
+.no-favorite {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6rem;
+
+  height: 30rem;
+}
+
+.no-favorite h1 {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 2.5rem;
+
+  color: #4E5455;
+}
+
+.hide {
+  display: none;
+}
