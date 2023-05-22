@@ -35,13 +35,13 @@ export class favorite {
       const userExists = this.entries.find(entry => entry.login === username)
 
       if(userExists) {
-        throw new Error('Usuario ja existe')
+        throw new Error('User already exists')
       }
 
       const user = await GithubUser.search(username)
       
       if(user.login === undefined) {
-        throw new Error('usuario não encontrado!')
+        throw new Error('User not found!')
       }
 
       this.entries = [user, ...this.entries]
