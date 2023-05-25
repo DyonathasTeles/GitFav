@@ -20,7 +20,7 @@ O GitFav é um site desenvolvido durante o curso Explorer da Rocketseat. Com o p
 - CSS
 
 ## 🔗 Links
-[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/dyonathas-teles-b75b4324a/)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/dyonathas-matos-teles-b75b4324a/)
 <br/>
 [![Instagram](/images/instagram.svg)](https://www.instagram.com/dyoninhas_77/)
 <br/>
